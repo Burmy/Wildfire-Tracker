@@ -26,9 +26,14 @@ body {
   position: relative;
 }
 
-.location-icon{
+.Wildfire-icon{
   font-size: 2rem;
   color: red;
+}
+
+.Volcano-icon{
+  font-size: 2rem;
+  color: blue;
 }
 
 .location-info{
