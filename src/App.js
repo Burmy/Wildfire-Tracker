@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Map from './Components/Map'
 import Header from './Components/Header'
-import Card from './Components/Card'
 
 function App() {
   const [eventData, setEventData] = useState([])
@@ -19,7 +18,6 @@ function App() {
   }, [])
   return (
     <div>
-      <Card />
       <Header />
       <Map eventData={eventData} />
     </div>
