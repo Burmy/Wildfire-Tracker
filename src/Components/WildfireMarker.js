@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react'
 import locationIcon from "@iconify/icons-mdi/pine-tree-fire";
 
-const LocationMarker = ({ lat, lng, onClick }) => {
+const WildfireMarker = ({ onClick }) => {
     return (
         <div className="location-marker" onClick={onClick}>
             <Icon icon={locationIcon} className="location-icon" />
@@ -9,4 +9,5 @@ const LocationMarker = ({ lat, lng, onClick }) => {
     )
 }
 
-export default LocationMarker
+export default WildfireMarker
+
