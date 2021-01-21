@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Syne', sans-serif;
+  display: flex;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .header {
-  padding: 200px;
-  background-color: firebrick;
-  color: #fff;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(banner.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding:30px;
 }
+
 .header h1 {
-  font-size: 25px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  color: rgb(250, 234, 255);
+  font-size: 50px;
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.836), 0 0px 12px rgba(0, 0, 0, 0.788);
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .map{
@@ -28,12 +37,8 @@ body {
 
 .Wildfire-icon{
   font-size: 2rem;
-  color: red;
-}
-
-.Volcano-icon{
-  font-size: 2rem;
-  color: blue;
+  color: rgb(231, 85, 85);
+  cursor: pointer;
 }
 
 .location-info{
@@ -43,20 +48,45 @@ body {
   width:400px;
   min-height: 200px;
   padding: 20px;
-  background-color: black;
-  border-radius: 3px;
+  background-color: #292842b6;
+  border-radius: 6px;
   font-size: 19px;
-  color: aliceblue;
+  color: rgb(250, 232, 232);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.486),0 0px 10px rgba(0, 0, 0, 0.486),0 0px 10px rgba(0, 0, 0, 0.486), 0 0px 10px rgba(0, 0, 0, 0.486);
+  
 }
+
+.location-info h2{
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.719), 0 0px 12px rgba(0, 0, 0, 0.705);
+} 
 
 .location-info ul{
   list-style-type: none;
   padding: 0;
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.719), 0 0px 12px rgba(0, 0, 0, 0.705);
 }
 
 .location-info li{
   padding: 5px 0;
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.719), 0 0px 12px rgba(0, 0, 0, 0.705);
 }
- 
 
-  
+.btn {
+  color: #ffe8f4;
+  font-family: 'Syne', sans-serif;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding: 10px 35px 12px 35px;
+  border: 2.3px solid #ffeff7;
+  border-radius: .5rem;
+  font-size: 24px;
+  background-color: rgba(71, 49, 70, 0.397);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: #3c1c41;
+  background-color: #fce6f1;
+  transform: scale(1.08);
+}
