@@ -16,7 +16,6 @@ body {
   align-items: center;
   flex-direction: column;
   background: url(banner.png);
-  background-repeat: no-repeat;
   background-position-x: right;
   padding:30px;
 }
@@ -31,7 +30,7 @@ body {
 
 .map{
   width: 100vw;
-  height: 100vh;
+  height: 79vh;
   position: relative;
 } 
 
@@ -80,7 +79,7 @@ body {
   border: 2.3px solid #ffeff7;
   border-radius: .5rem;
   font-size: 24px;
-  background-color: rgba(71, 49, 70, 0.397);
+  background-color: rgba(59, 38, 58, 0.603);
   cursor: pointer;
 }
 
